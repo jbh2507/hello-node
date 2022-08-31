@@ -7,5 +7,5 @@ console.log("node forward port: " + port);
 
 http.createServer(function (req, res) {
     res.writeHead(200, {'Content-Type': 'Application/json'});
-    res.end('{status:OK}');
+    res.end('{"status":"OK"}');
 }).listen(port);
